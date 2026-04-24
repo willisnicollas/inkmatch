@@ -81,7 +81,7 @@ const StyleDetail = () => {
 
           <div className="lg:col-span-5 space-y-12">
             <div className="bg-muted p-10 border border-border space-y-8">
-              <h3 className="text-2xl font-bold uppercase tracking-tighter">Trouver les Maîtres</h3>
+              <h3 className="text-2xl font-bold uppercase tracking-tighter">Trouver les Artistes</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
                 Prêt à passer sous l'aiguille ? Découvrez les artistes qui ont passé des années à perfectionner le style {style.name}.
               </p>

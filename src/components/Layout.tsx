@@ -16,7 +16,7 @@ export const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <Link to="/" className="text-2xl font-bold tracking-tighter uppercase">
+        <Link to="/" className="text-2xl font-bold tracking-tighter">
           InkMatch
         </Link>
 
@@ -75,9 +75,9 @@ export const Footer = () => {
     <footer className="bg-background border-t border-border py-20 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="space-y-6">
-          <h3 className="text-xl font-bold tracking-tighter uppercase">InkMatch</h3>
+          <h3 className="text-xl font-bold tracking-tighter">InkMatch</h3>
           <p className="text-muted-foreground text-sm leading-relaxed">
-            Le guide artistique mondial de la culture du tatouage. Explorez les styles et trouvez les maîtres du métier.
+            Le guide artistique mondial de la culture du tatouage. Explorez les styles et trouvez les artistes du métier.
           </p>
         </div>
         <div>
@@ -85,7 +85,7 @@ export const Footer = () => {
           <ul className="space-y-4 text-sm text-muted-foreground">
             <li><Link to="/styles" className="hover:text-foreground transition-colors">Styles de Tatouage</Link></li>
             <li><Link to="/artists" className="hover:text-foreground transition-colors">Annuaire des Artistes</Link></li>
-            <li><Link to="/" className="hover:text-foreground transition-colors">Maîtres en Vedette</Link></li>
+            <li><Link to="/" className="hover:text-foreground transition-colors">Artistes en Vedette</Link></li>
           </ul>
         </div>
         <div>

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { Filter, Star, MapPin } from 'lucide-react';
-import { ARTISTS, TATTOO_STYLES } from '../constants';
+import { ARTISTS, TATTOO_STYLES, COUNTRIES } from '../constants';
 
 const ArtistsDirectory = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -15,7 +15,7 @@ const ArtistsDirectory = () => {
     return matchesStyle && matchesCountry;
   });
 
-  const countries = Array.from(new Set(ARTISTS.map(a => a.country)));
+  const countries = COUNTRIES;
 
   return (
     <div className="pt-32 pb-32 px-6 max-w-7xl mx-auto">
@@ -58,7 +58,7 @@ const ArtistsDirectory = () => {
       </div>
 
       {/* Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+      <div className="grid grid-cols-1 gap-12">
         {filteredArtists.length > 0 ? (
           filteredArtists.map((artist, index) => (
             <motion.div

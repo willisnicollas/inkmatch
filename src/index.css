@@ -4,15 +4,17 @@
   --font-sans: "Helvetica", "Arial", sans-serif;
   --color-background: #000000;
   --color-foreground: #ffffff;
-  --color-muted: #1a1a1a;
-  --color-muted-foreground: #a1a1aa;
+  --color-muted: #111111;
+  --color-muted-foreground: #71717a;
   --color-accent: #ffffff;
-  --color-border: #27272a;
+  --color-border: #1a1a1a;
 }
 
 @layer base {
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply text-foreground font-sans antialiased min-h-screen;
+    background: radial-gradient(circle at center, #1a1a1a 0%, #000000 100%);
+    background-attachment: fixed;
     scroll-behavior: smooth;
   }
 

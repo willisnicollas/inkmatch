@@ -11,7 +11,7 @@ const StylesGrid = () => {
         <h2 className="text-5xl md:text-7xl font-bold uppercase tracking-tighter">Styles de Tatouage</h2>
       </header>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border">
+      <div className="grid grid-cols-1 gap-px bg-border border border-border">
         {TATTOO_STYLES.map((style, index) => (
           <motion.div
             key={style.id}

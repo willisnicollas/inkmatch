@@ -1,5 +1,7 @@
 import { TattooStyle, Artist } from './types';
 
+const GREY_GRADIENT = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjEwMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnMSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzU1NSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzIyMiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZzEpIi8+PC9zdmc+";
+
 export const TATTOO_STYLES: TattooStyle[] = [
   {
     id: 'abstrait',
@@ -8,12 +10,8 @@ export const TATTOO_STYLES: TattooStyle[] = [
     origins: 'Inspiré des mouvements artistiques du 20ème siècle comme l’expressionnisme abstrait.',
     characteristics: ['Formes libres', 'Éclaboussures', 'Lignes chaotiques mais maîtrisées', 'Explosion de textures'],
     bestFor: 'Ceux qui cherchent une pièce unique, interprétative et profondément personnelle.',
-    imageUrl: 'https://picsum.photos/seed/style-abstract/800/1000',
-    gallery: [
-      'https://picsum.photos/seed/abstract-1/800/1000',
-      'https://picsum.photos/seed/abstract-2/800/1000',
-      'https://picsum.photos/seed/abstract-3/800/1000',
-    ]
+    imageUrl: GREY_GRADIENT,
+    gallery: [GREY_GRADIENT, GREY_GRADIENT, GREY_GRADIENT]
   },
   {
     id: 'aquarelle',
@@ -22,12 +20,8 @@ export const TATTOO_STYLES: TattooStyle[] = [
     origins: 'Style contemporain né de l’influence de la peinture moderne.',
     characteristics: ['Absence de contours', 'Effets de pinceau', 'Transparence', 'Éclaboussures d’encre'],
     bestFor: 'Les âmes artistiques cherchant de la fluidité et de la poésie.',
-    imageUrl: 'https://picsum.photos/seed/style-watercolor/800/1000',
-    gallery: [
-      'https://picsum.photos/seed/watercolor-1/800/1000',
-      'https://picsum.photos/seed/watercolor-2/800/1000',
-      'https://picsum.photos/seed/watercolor-3/800/1000',
-    ]
+    imageUrl: GREY_GRADIENT,
+    gallery: [GREY_GRADIENT, GREY_GRADIENT, GREY_GRADIENT]
   },
   {
     id: 'bio-mecanique',
@@ -36,12 +30,8 @@ export const TATTOO_STYLES: TattooStyle[] = [
     origins: 'Popularisé dans les années 80, très influencé par l’œuvre de H.R. Giger (Alien).',
     characteristics: ['Rouages et pistons', 'Tissus organiques entremêlés', 'Effet 3D', 'Ombrages complexes'],
     bestFor: 'Les fans de science-fiction et de détails mécaniques hyper-réalistes.',
-    imageUrl: 'https://picsum.photos/seed/style-biomech/800/1000',
-    gallery: [
-      'https://picsum.photos/seed/biomech-1/800/1000',
-      'https://picsum.photos/seed/biomech-2/800/1000',
-      'https://picsum.photos/seed/biomech-3/800/1000',
-    ]
+    imageUrl: GREY_GRADIENT,
+    gallery: [GREY_GRADIENT, GREY_GRADIENT, GREY_GRADIENT]
   },
   {
     id: 'bio-organique',
@@ -50,12 +40,8 @@ export const TATTOO_STYLES: TattooStyle[] = [
     origins: 'Inspiré par la nature, les récifs coralliens et l’anatomie fantastique.',
     characteristics: ['Formes fluides', 'Textures naturelles', 'Fusion avec l’anatomie', 'Profondeur'],
     bestFor: 'Ceux qui veulent un tatouage qui semble faire partie intégrante de leur corps.',
-    imageUrl: 'https://picsum.photos/seed/style-bioorganic/800/1000',
-    gallery: [
-      'https://picsum.photos/seed/bioorganic-1/800/1000',
-      'https://picsum.photos/seed/bioorganic-2/800/1000',
-      'https://picsum.photos/seed/bioorganic-3/800/1000',
-    ]
+    imageUrl: GREY_GRADIENT,
+    gallery: [GREY_GRADIENT, GREY_GRADIENT, GREY_GRADIENT]
   },
   {
     id: 'blackwork',
@@ -64,12 +50,8 @@ export const TATTOO_STYLES: TattooStyle[] = [
     origins: 'Évolution moderne des styles tribaux et traditionnels.',
     characteristics: ['Encre noire uniquement', 'Saturation lourde', 'Contraste élevé', 'Sujets variés'],
     bestFor: 'Ceux qui veulent un look frappant, intemporel et sans compromis.',
-    imageUrl: 'https://picsum.photos/seed/style-blackwork/800/1000',
-    gallery: [
-      'https://picsum.photos/seed/blackwork-1/800/1000',
-      'https://picsum.photos/seed/blackwork-2/800/1000',
-      'https://picsum.photos/seed/blackwork-3/800/1000',
-    ]
+    imageUrl: GREY_GRADIENT,
+    gallery: [GREY_GRADIENT, GREY_GRADIENT, GREY_GRADIENT]
   },
   {
     id: 'chicano',
@@ -78,12 +60,8 @@ export const TATTOO_STYLES: TattooStyle[] = [
     origins: 'Né dans la culture des quartiers et des prisons américano-mexicaines.',
     characteristics: ['Ombrages gris doux', 'Portraits réalistes', 'Vierges Marie et clowns', 'Lettrages stylisés'],
     bestFor: 'Ceux qui cherchent un tatouage avec une âme, une histoire et une identité forte.',
-    imageUrl: 'https://picsum.photos/seed/style-chicano/800/1000',
-    gallery: [
-      'https://picsum.photos/seed/chicano-1/800/1000',
-      'https://picsum.photos/seed/chicano-2/800/1000',
-      'https://picsum.photos/seed/chicano-3/800/1000',
-    ]
+    imageUrl: GREY_GRADIENT,
+    gallery: [GREY_GRADIENT, GREY_GRADIENT, GREY_GRADIENT]
   },
   {
     id: 'cybersigilism',
@@ -92,12 +70,8 @@ export const TATTOO_STYLES: TattooStyle[] = [
     origins: 'Émergé récemment de la culture internet et du design post-numérique.',
     characteristics: ['Lignes fines et acérées', 'Allure technologique', 'Formes agressives mais graciles', 'Noir pur'],
     bestFor: 'Les avant-gardistes cherchant un style futuriste et unique.',
-    imageUrl: 'https://picsum.photos/seed/style-cyber/800/1000',
-    gallery: [
-      'https://picsum.photos/seed/cyber-1/800/1000',
-      'https://picsum.photos/seed/cyber-2/800/1000',
-      'https://picsum.photos/seed/cyber-3/800/1000',
-    ]
+    imageUrl: GREY_GRADIENT,
+    gallery: [GREY_GRADIENT, GREY_GRADIENT, GREY_GRADIENT]
   },
   {
     id: 'dotwork',
@@ -106,12 +80,8 @@ export const TATTOO_STYLES: TattooStyle[] = [
     origins: 'Inspiré du pointillisme, très utilisé dans la géométrie sacrée.',
     characteristics: ['Texture pointillée', 'Ombrages par densité', 'Précision extrême', 'Aspect organique'],
     bestFor: 'Les amateurs de textures subtiles et de détails minutieux.',
-    imageUrl: 'https://picsum.photos/seed/style-dotwork/800/1000',
-    gallery: [
-      'https://picsum.photos/seed/dotwork-1/800/1000',
-      'https://picsum.photos/seed/dotwork-2/800/1000',
-      'https://picsum.photos/seed/dotwork-3/800/1000',
-    ]
+    imageUrl: GREY_GRADIENT,
+    gallery: [GREY_GRADIENT, GREY_GRADIENT, GREY_GRADIENT]
   },
   {
     id: 'fine-line',
@@ -120,12 +90,8 @@ export const TATTOO_STYLES: TattooStyle[] = [
     origins: 'Popularisé par le mouvement "single needle" en Californie.',
     characteristics: ['Lignes de cheveux', 'Détails microscopiques', 'Minimalisme', 'Élégance'],
     bestFor: 'Ceux qui recherchent la discrétion et la finesse absolue.',
-    imageUrl: 'https://picsum.photos/seed/style-fineline/800/1000',
-    gallery: [
-      'https://picsum.photos/seed/fineline-1/800/1000',
-      'https://picsum.photos/seed/fineline-2/800/1000',
-      'https://picsum.photos/seed/fineline-3/800/1000',
-    ]
+    imageUrl: GREY_GRADIENT,
+    gallery: [GREY_GRADIENT, GREY_GRADIENT, GREY_GRADIENT]
   },
   {
     id: 'geometrique',
@@ -134,12 +100,8 @@ export const TATTOO_STYLES: TattooStyle[] = [
     origins: 'Influencé par la géométrie sacrée et le design graphique.',
     characteristics: ['Symétrie parfaite', 'Formes géométriques', 'Précision', 'Harmonie visuelle'],
     bestFor: 'Les esprits structurés cherchant l’équilibre parfait sur la peau.',
-    imageUrl: 'https://picsum.photos/seed/style-geometric/800/1000',
-    gallery: [
-      'https://picsum.photos/seed/geometric-1/800/1000',
-      'https://picsum.photos/seed/geometric-2/800/1000',
-      'https://picsum.photos/seed/geometric-3/800/1000',
-    ]
+    imageUrl: GREY_GRADIENT,
+    gallery: [GREY_GRADIENT, GREY_GRADIENT, GREY_GRADIENT]
   },
   {
     id: 'japonais',
@@ -148,12 +110,8 @@ export const TATTOO_STYLES: TattooStyle[] = [
     origins: 'Issu de l’Irezumi et de l’art Ukiyo-e de la période Edo.',
     characteristics: ['Grands aplats de couleurs', 'Motifs de vagues et nuages', 'Dragons, carpes et samouraïs', 'Composition fluide'],
     bestFor: 'Ceux qui souhaitent une œuvre narrative couvrant de grandes parties du corps.',
-    imageUrl: 'https://picsum.photos/seed/style-japanese/800/1000',
-    gallery: [
-      'https://picsum.photos/seed/japanese-1/800/1000',
-      'https://picsum.photos/seed/japanese-2/800/1000',
-      'https://picsum.photos/seed/japanese-3/800/1000',
-    ]
+    imageUrl: GREY_GRADIENT,
+    gallery: [GREY_GRADIENT, GREY_GRADIENT, GREY_GRADIENT]
   },
   {
     id: 'lettrage',
@@ -162,12 +120,8 @@ export const TATTOO_STYLES: TattooStyle[] = [
     origins: 'Issu de la calligraphie traditionnelle et du graffiti.',
     characteristics: ['Polices personnalisées', 'Fioritures calligraphiques', 'Précision du trait', 'Lisibilité variable'],
     bestFor: 'Ceux qui veulent graver des mots, des noms ou des citations avec élégance.',
-    imageUrl: 'https://picsum.photos/seed/style-lettering/800/1000',
-    gallery: [
-      'https://picsum.photos/seed/lettering-1/800/1000',
-      'https://picsum.photos/seed/lettering-2/800/1000',
-      'https://picsum.photos/seed/lettering-3/800/1000',
-    ]
+    imageUrl: GREY_GRADIENT,
+    gallery: [GREY_GRADIENT, GREY_GRADIENT, GREY_GRADIENT]
   },
   {
     id: 'mandala',
@@ -176,12 +130,8 @@ export const TATTOO_STYLES: TattooStyle[] = [
     origins: 'Racines dans les traditions spirituelles orientales (hindouisme, bouddhisme).',
     characteristics: ['Symétrie radiale', 'Détails concentriques', 'Lignes précises', 'Aspect spirituel'],
     bestFor: 'Ceux qui cherchent un tatouage harmonieux et introspectif.',
-    imageUrl: 'https://picsum.photos/seed/style-mandala/800/1000',
-    gallery: [
-      'https://picsum.photos/seed/mandala-1/800/1000',
-      'https://picsum.photos/seed/mandala-2/800/1000',
-      'https://picsum.photos/seed/mandala-3/800/1000',
-    ]
+    imageUrl: GREY_GRADIENT,
+    gallery: [GREY_GRADIENT, GREY_GRADIENT, GREY_GRADIENT]
   },
   {
     id: 'manga',
@@ -190,12 +140,8 @@ export const TATTOO_STYLES: TattooStyle[] = [
     origins: 'Directement lié à la culture Otaku et à l’industrie du manga au Japon.',
     characteristics: ['Lignes claires', 'Couleurs vibrantes ou noir et blanc tramé', 'Perspectives dynamiques', 'Personnages iconiques'],
     bestFor: 'Les fans inconditionnels de la culture japonaise et de l’animation.',
-    imageUrl: 'https://picsum.photos/seed/style-manga/800/1000',
-    gallery: [
-      'https://picsum.photos/seed/manga-1/800/1000',
-      'https://picsum.photos/seed/manga-2/800/1000',
-      'https://picsum.photos/seed/manga-3/800/1000',
-    ]
+    imageUrl: GREY_GRADIENT,
+    gallery: [GREY_GRADIENT, GREY_GRADIENT, GREY_GRADIENT]
   },
   {
     id: 'maori',
@@ -204,12 +150,8 @@ export const TATTOO_STYLES: TattooStyle[] = [
     origins: 'Art du "Ta Moko" pratiqué par le peuple Maori.',
     characteristics: ['Spirales (Koru)', 'Lignes courbes épaisses', 'Motifs de peigne (Uhi)', 'Symbolique profonde'],
     bestFor: 'Ceux qui respectent les traditions ancestrales et les histoires de lignée.',
-    imageUrl: 'https://picsum.photos/seed/style-maori/800/1000',
-    gallery: [
-      'https://picsum.photos/seed/maori-1/800/1000',
-      'https://picsum.photos/seed/maori-2/800/1000',
-      'https://picsum.photos/seed/maori-3/800/1000',
-    ]
+    imageUrl: GREY_GRADIENT,
+    gallery: [GREY_GRADIENT, GREY_GRADIENT, GREY_GRADIENT]
   },
   {
     id: 'micro-realisme',
@@ -218,12 +160,8 @@ export const TATTOO_STYLES: TattooStyle[] = [
     origins: 'Évolution moderne du réalisme grâce à la précision des nouvelles machines.',
     characteristics: ['Détails photographiques minuscules', 'Ombrages fondus', 'Aiguilles simples', 'Réalisme bluffant'],
     bestFor: 'Les amateurs de défis techniques et de réalisme discret.',
-    imageUrl: 'https://picsum.photos/seed/style-microrealism/800/1000',
-    gallery: [
-      'https://picsum.photos/seed/micro-1/800/1000',
-      'https://picsum.photos/seed/micro-2/800/1000',
-      'https://picsum.photos/seed/micro-3/800/1000',
-    ]
+    imageUrl: GREY_GRADIENT,
+    gallery: [GREY_GRADIENT, GREY_GRADIENT, GREY_GRADIENT]
   },
   {
     id: 'minimaliste',
@@ -232,12 +170,8 @@ export const TATTOO_STYLES: TattooStyle[] = [
     origins: 'Directement lié au courant artistique minimaliste.',
     characteristics: ['Peu de lignes', 'Petite taille', 'Espace négatif important', 'Discrétion'],
     bestFor: 'Ceux qui préfèrent la suggestion à l’exhibition.',
-    imageUrl: 'https://picsum.photos/seed/style-minimalist/800/1000',
-    gallery: [
-      'https://picsum.photos/seed/minimalist-1/800/1000',
-      'https://picsum.photos/seed/minimalist-2/800/1000',
-      'https://picsum.photos/seed/minimalist-3/800/1000',
-    ]
+    imageUrl: GREY_GRADIENT,
+    gallery: [GREY_GRADIENT, GREY_GRADIENT, GREY_GRADIENT]
   },
   {
     id: 'neotraditionnel',
@@ -246,12 +180,8 @@ export const TATTOO_STYLES: TattooStyle[] = [
     origins: 'Évolution du traditionnel avec des techniques modernes.',
     characteristics: ['Lignes variées', 'Palette de couleurs riche', 'Profondeur accrue', 'Sujets détaillés'],
     bestFor: 'Ceux qui aiment le classique mais avec une touche de modernité artistique.',
-    imageUrl: 'https://picsum.photos/seed/style-neotraditional/800/1000',
-    gallery: [
-      'https://picsum.photos/seed/neotrad-1/800/1000',
-      'https://picsum.photos/seed/neotrad-2/800/1000',
-      'https://picsum.photos/seed/neotrad-3/800/1000',
-    ]
+    imageUrl: GREY_GRADIENT,
+    gallery: [GREY_GRADIENT, GREY_GRADIENT, GREY_GRADIENT]
   },
   {
     id: 'new-school',
@@ -260,12 +190,8 @@ export const TATTOO_STYLES: TattooStyle[] = [
     origins: 'Né dans les années 70-80 aux USA, influencé par le graffiti et la pop culture.',
     characteristics: ['Couleurs flashy', 'Gros contours', 'Perspective déformée', 'Sujets fantastiques'],
     bestFor: 'Les personnalités fun, créatives et qui aiment l’imagerie cartoon.',
-    imageUrl: 'https://picsum.photos/seed/style-newschool/800/1000',
-    gallery: [
-      'https://picsum.photos/seed/newschool-1/800/1000',
-      'https://picsum.photos/seed/newschool-2/800/1000',
-      'https://picsum.photos/seed/newschool-3/800/1000',
-    ]
+    imageUrl: GREY_GRADIENT,
+    gallery: [GREY_GRADIENT, GREY_GRADIENT, GREY_GRADIENT]
   },
   {
     id: 'old-school',
@@ -274,12 +200,8 @@ export const TATTOO_STYLES: TattooStyle[] = [
     origins: 'Popularisé par les marins (Sailor Jerry) au début du 20ème siècle.',
     characteristics: ['Gros contours noirs', 'Palette limitée', 'Symbolique marine', 'Dessin 2D'],
     bestFor: 'Les puristes cherchant un tatouage qui vieillira parfaitement.',
-    imageUrl: 'https://picsum.photos/seed/style-oldschool/800/1000',
-    gallery: [
-      'https://picsum.photos/seed/oldschool-1/800/1000',
-      'https://picsum.photos/seed/oldschool-2/800/1000',
-      'https://picsum.photos/seed/oldschool-3/800/1000',
-    ]
+    imageUrl: GREY_GRADIENT,
+    gallery: [GREY_GRADIENT, GREY_GRADIENT, GREY_GRADIENT]
   },
   {
     id: 'ornemental',
@@ -288,12 +210,8 @@ export const TATTOO_STYLES: TattooStyle[] = [
     origins: 'Inspiré par la joaillerie, la dentelle et les arts décoratifs.',
     characteristics: ['Symétrie', 'Motifs de dentelle', 'Effets de pendentifs', 'Finesse extrême'],
     bestFor: 'Ceux qui veulent embellir l’anatomie avec élégance et finesse.',
-    imageUrl: 'https://picsum.photos/seed/style-ornamental/800/1000',
-    gallery: [
-      'https://picsum.photos/seed/ornamental-1/800/1000',
-      'https://picsum.photos/seed/ornamental-2/800/1000',
-      'https://picsum.photos/seed/ornamental-3/800/1000',
-    ]
+    imageUrl: GREY_GRADIENT,
+    gallery: [GREY_GRADIENT, GREY_GRADIENT, GREY_GRADIENT]
   },
   {
     id: 'polynesien',
@@ -302,12 +220,8 @@ export const TATTOO_STYLES: TattooStyle[] = [
     origins: 'Pratiqué depuis des millénaires dans les îles du Pacifique.',
     characteristics: ['Aplats de noir', 'Motifs géométriques symboliques', 'Adaptation aux muscles', 'Noir pur'],
     bestFor: 'Une recherche de puissance, de protection et de lien avec le Pacifique.',
-    imageUrl: 'https://picsum.photos/seed/style-polynesian/800/1000',
-    gallery: [
-      'https://picsum.photos/seed/poly-1/800/1000',
-      'https://picsum.photos/seed/poly-2/800/1000',
-      'https://picsum.photos/seed/poly-3/800/1000',
-    ]
+    imageUrl: GREY_GRADIENT,
+    gallery: [GREY_GRADIENT, GREY_GRADIENT, GREY_GRADIENT]
   },
   {
     id: 'realisme',
@@ -316,12 +230,8 @@ export const TATTOO_STYLES: TattooStyle[] = [
     origins: 'Adaptation des techniques de portrait à l’huile et du fusain au tatouage.',
     characteristics: ['Dégradés de gris parfaits', 'Absence de contours', 'Volume et lumière', 'Précision extrême'],
     bestFor: 'Les portraits d’êtres chers ou de célébrités et les scènes de nature.',
-    imageUrl: 'https://picsum.photos/seed/style-realism/800/1000',
-    gallery: [
-      'https://picsum.photos/seed/realism-1/800/1000',
-      'https://picsum.photos/seed/realism-2/800/1000',
-      'https://picsum.photos/seed/realism-3/800/1000',
-    ]
+    imageUrl: GREY_GRADIENT,
+    gallery: [GREY_GRADIENT, GREY_GRADIENT, GREY_GRADIENT]
   },
   {
     id: 'trash-polka',
@@ -330,12 +240,8 @@ export const TATTOO_STYLES: TattooStyle[] = [
     origins: 'Créé en Allemagne par Volko Merschky et Simone Pfaff.',
     characteristics: ['Noir et Rouge uniquement', 'Contrastes violents', 'Mélange texte et image', 'Énergie brute'],
     bestFor: 'Les personnalités rebelles cherchant une pièce dynamique et unique.',
-    imageUrl: 'https://picsum.photos/seed/style-trashpolka/800/1000',
-    gallery: [
-      'https://picsum.photos/seed/style-trashpolka-1/800/1000',
-      'https://picsum.photos/seed/style-trashpolka-2/800/1000',
-      'https://picsum.photos/seed/style-trashpolka-3/800/1000',
-    ]
+    imageUrl: GREY_GRADIENT,
+    gallery: [GREY_GRADIENT, GREY_GRADIENT, GREY_GRADIENT]
   },
   {
     id: 'tribal',
@@ -344,19 +250,41 @@ export const TATTOO_STYLES: TattooStyle[] = [
     origins: 'Inspiré des tatouages indigènes du monde entier.',
     characteristics: ['Encre noire solide', 'Formes en pointes', 'Flux avec le corps', 'Puissance visuelle'],
     bestFor: 'Ceux qui recherchent un design fort, graphique et intemporel.',
-    imageUrl: 'https://picsum.photos/seed/style-tribal/800/1000',
-    gallery: [
-      'https://picsum.photos/seed/tribal-1/800/1000',
-      'https://picsum.photos/seed/tribal-2/800/1000',
-      'https://picsum.photos/seed/tribal-3/800/1000',
-    ]
+    imageUrl: GREY_GRADIENT,
+    gallery: [GREY_GRADIENT, GREY_GRADIENT, GREY_GRADIENT]
   }
+];
+
+export const COUNTRIES = [
+  "Afghanistan", "Afrique du Sud", "Albanie", "Algérie", "Allemagne", "Andorre", "Angola", "Antigua-et-Barbuda", 
+  "Arabie Saoudite", "Argentine", "Arménie", "Australie", "Autriche", "Azerbaïdjan", "Bahamas", "Bahreïn", 
+  "Bangladesh", "Barbade", "Belgique", "Belize", "Bénin", "Bhoutan", "Biélorussie", "Birmanie", "Bolivie", 
+  "Bosnie-Herzégovine", "Botswana", "Brésil", "Brunei", "Bulgarie", "Burkina Faso", "Burundi", "Cambodge", 
+  "Cameroun", "Canada", "Cap-Vert", "Chili", "Chine", "Chypre", "Colombie", "Comores", "Congo-Brazzaville", 
+  "Congo-Kinshasa", "Corée du Nord", "Corée du Sud", "Costa Rica", "Côte d'Ivoire", "Croatie", "Cuba", 
+  "Danemark", "Djibouti", "Dominique", "Égypte", "Émirats Arabes Unis", "Équateur", "Érythrée", "Espagne", 
+  "Eswatini", "Estonie", "États-Unis", "Éthiopie", "Fidji", "Finlande", "France", "Gabon", "Gambie", "Géorgie", 
+  "Ghana", "Grèce", "Grenade", "Guatemala", "Guinée", "Guinée-Bissau", "Guinée équatoriale", "Guyana", "Haïti", 
+  "Honduras", "Hongrie", "Inde", "Indonésie", "Irak", "Iran", "Irlande", "Islande", "Israël", "Italie", "Jamaïque", 
+  "Japon", "Jordanie", "Kazakhstan", "Kenya", "Kirghizistan", "Kiribati", "Koweït", "Laos", "Lesotho", "Lettonie", 
+  "Liban", "Libéria", "Libye", "Liechtenstein", "Lituanie", "Luxembourg", "Macédoine du Nord", "Madagascar", 
+  "Malaisie", "Malawi", "Maldives", "Mali", "Malte", "Maroc", "Maurice", "Mauritanie", "Mexique", "Micronésie", 
+  "Moldavie", "Monaco", "Mongolie", "Monténégro", "Mozambique", "Namibie", "Nauru", "Népal", "Nicaragua", 
+  "Niger", "Nigéria", "Norvège", "Nouvelle-Zélande", "Oman", "Ouganda", "Ouzbékistan", "Pakistan", "Palaos", 
+  "Palestine", "Panama", "Papouasie-Nouvelle-Guinée", "Paraguay", "Pays-Bas", "Pérou", "Philippines", "Pologne", 
+  "Portugal", "Qatar", "République Centrafricaine", "République Dominicaine", "République Tchèque", "Roumanie", 
+  "Royaume-Uni", "Russie", "Rwanda", "Saint-Christophe-et-Niévès", "Sainte-Lucie", "Saint-Marin", 
+  "Saint-Vincent-et-les-Grenadines", "Salomon", "Salvador", "Samoa", "Sao Tomé-et-Principe", "Sénégal", 
+  "Serbie", "Seychelles", "Sierra Leone", "Singapour", "Slovaquie", "Slovénie", "Somalie", "Soudan", 
+  "Soudan du Sud", "Sri Lanka", "Suède", "Suisse", "Suriname", "Syrie", "Tadjikistan", "Tanzanie", "Tchad", 
+  "Thaïlande", "Timor oriental", "Togo", "Tonga", "Trinité-et-Tobago", "Tunisie", "Turkménistan", "Turquie", 
+  "Tuvalu", "Ukraine", "Uruguay", "Vanuatu", "Vatican", "Venezuela", "Viêt Nam", "Yémen", "Zambie", "Zimbabwe"
 ];
 
 // Génération de 5 artistes par style avec images picsum
 export const ARTISTS: Artist[] = TATTOO_STYLES.flatMap(style => {
   const cities = [
-    { city: 'Paris', country: 'France', studio: 'Ink Master' },
+    { city: 'Paris', country: 'France', studio: 'Artiste Studio' },
     { city: 'Berlin', country: 'Allemagne', studio: 'Art Collective' },
     { city: 'Londres', country: 'Royaume-Uni', studio: 'The Studio' },
     { city: 'Tokyo', country: 'Japon', studio: 'Dragon Ink' },
@@ -365,18 +293,14 @@ export const ARTISTS: Artist[] = TATTOO_STYLES.flatMap(style => {
 
   return cities.map((meta, i) => ({
     id: `artist-${style.id}-${i + 1}`,
-    name: `Maître ${style.name} ${['I', 'II', 'III', 'IV', 'V'][i]}`,
+    name: `Artiste ${style.name} ${['I', 'II', 'III', 'IV', 'V'][i]}`,
     studioName: meta.studio,
     city: meta.city,
     country: meta.country,
     styles: [style.name, 'Blackwork'],
     bio: `Expert international du style ${style.name}, basé à ${meta.city}. Reconnu pour sa technique irréprochable et sa vision artistique unique.`,
-    imageUrl: `https://picsum.photos/seed/artist-${style.id}-${i}/800/1000`,
-    gallery: [
-      `https://picsum.photos/seed/artist-${style.id}-${i}-p1/801/1001`,
-      `https://picsum.photos/seed/artist-${style.id}-${i}-p2/802/1002`,
-      `https://picsum.photos/seed/artist-${style.id}-${i}-p3/803/1003`,
-    ],
+    imageUrl: GREY_GRADIENT,
+    gallery: [GREY_GRADIENT, GREY_GRADIENT, GREY_GRADIENT],
     rating: [4.9, 4.8, 4.7, 4.9, 5.0][i],
     reviews: [
       { id: `r-${style.id}-${i}`, userName: 'Alexandre P.', rating: 5, comment: 'Une précision chirurgicale et un style unique.', date: '2024-03-20' }
