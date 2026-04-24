@@ -108,6 +108,7 @@ export const EmailSection = () => {
             border-bottom: 1px solid #e5e7eb !important;
             padding: 12px 0 !important;
             background-color: transparent !important;
+            color: #000 !important;
           }
         ` }} />
 
